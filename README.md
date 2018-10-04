@@ -1,5 +1,5 @@
 # website_blocker
-## Simple python script that accesses the hosts file and redirects website addresses to the localhost
+## Simple python script that denies website access by redirecting website addresses to the localhost within the hosts file
 ### The script is designed to run in the background at start up. Use [Cron](http://www.jessicayung.com/automate-running-a-script-using-crontab/) to automate the script.
 ### To block the desired websites, modify the following code
 ```
