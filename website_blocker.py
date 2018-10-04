@@ -7,7 +7,7 @@ website_list = ["www.facebook.com","facebook.com"]
 
 while True:
     if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
-        # checks if the current time is within working hours or not
+# checks if the current time is within working hours or not
         print("Working Hours...")
         with open(hosts_path,'r+') as file:
             content = file.read()
@@ -16,7 +16,7 @@ while True:
                     pass
                 else:
                     file.write(redirect + "    " + website + "\n")
-        # if within working hours, program writes domain name and redirect ip to hosts file
+# if within working hours, program writes domain name and redirect ip to hosts file
     else:
         with open(hosts_path,'r+') as file:
             content = file.readlines()
@@ -26,5 +26,5 @@ while True:
                     file.write(line)
             file.truncate()
         print("Regular Hours...")
-        # if not within working hours, the program will delete the lines that redirect the domain names within hosts file
+# if not within working hours, the program will delete the lines that redirect the domain names within hosts file
     time.sleep(5)
