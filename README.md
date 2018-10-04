@@ -10,5 +10,8 @@ website_list = ["www.facebook.com","facebook.com"]
 if dt(dt.now().year,dt.now().month,dt.now().day,8) < dt.now() < dt(dt.now().year,dt.now().month,dt.now().day,17):
 ```
 
+#### Program Architecture 
+Script accesses hosts file , checks what time it is every five seconds to see if it is within the working hours or not. If it is within working hours , the script writes to the hosts file the redirect address and the domain name which denies access to the websites. If it is not within working hours the script will check if the hosts file contains the domain name and redirect address, if it does it will delete the lines to allow website access again. 
+
 
 
