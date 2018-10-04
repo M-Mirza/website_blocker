@@ -1,7 +1,7 @@
 # website_blocker
 ## Simple python script that accesses the hosts file and redirects website addresses to the localhost
 ### The script is designed to run in the background at start up. Use [Cron](http://www.jessicayung.com/automate-running-a-script-using-crontab/) to automate the script.
-### To block the desired websites, simply modify the following code
+### To block the desired websites, modify the following code
 ```
 website_list = ["www.facebook.com","facebook.com"]
 ```
